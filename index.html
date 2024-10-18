@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Awareness</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://www.ready.gov/sites/default/files/2020-04/Flooded-neighborhood_1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn ease 2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .image-effect {
+            transition: transform 0.3s;
+        }
+
+        .image-effect:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-800 text-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg- bg-gray-500 p-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-bold">Flood Awareness</h1>
+            <nav>
+                <a href="#causes" class="text-lg mx-4 hover:text-blue-400 transition">Causes</a>
+                <a href="#effects" class="text-lg mx-4 hover:text-blue-400 transition">Effects</a>
+                <a href="#precautions" class="text-lg mx-4 hover:text-blue-400 transition">Precautions</a>
+                <a href="#history" class="text-lg mx-4 hover:text-blue-400 transition">Flood History</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="py-16 bg-gray-800 text-center">
+        <div class="max-w-4xl mx-auto px-6 fade-in">
+            <h2 class="text-4xl font-bold mb-8">What is a Flood?</h2>
+            <p class="text-lg leading-relaxed mb-8">
+                Floods are one of the most devastating natural disasters, caused by an overflow of water submerging normally dry land. Floods can be triggered by heavy rainfall, tropical storms, urbanization, and more. These floods can displace communities, destroy infrastructure, and cause lasting economic damage. Understanding their causes and taking precautions are key to minimizing damage.
+            </p>
+            <img src="flood.webp" alt="Flood Image" class="w-full h-64 object-cover rounded-lg shadow-lg mb-8">
+        </div>
+    </section>
+
+    <!-- Causes of Floods Section -->
+    <section id="causes" class="py-16 bg- text-center">
+        <div class="max-w-6xl mx-auto px-6 fade-in">
+            <h2 class="text-4xl font-bold mb-8" style="color: black;">Causes of Floods</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white text-gray-900 p-6 rounded-lg hover-effect">
+                    <h3 class="text-2xl font-bold mb-4">Heavy Rainfall</h3>
+                    <p>
+                        Heavy and prolonged rainfall can lead to water accumulation, overwhelming rivers, lakes, and drainage systems. This often results in flash floods or river floods, particularly in areas where the soil cannot absorb the excess water.
+                    </p>
+                    <img src="rain.jpg" alt="Heavy Rain" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4 image-effect">
+                    <a href="https://en.wikipedia.org/wiki/Precipitation" target="_blank" class="text-blue-500 underline">Learn More</a>
+                </div>
+                <div class="bg-white text-gray-900 p-6 rounded-lg hover-effect">
+                    <h3 class="text-2xl font-bold mb-4">Urbanization</h3>
+                    <p>
+                        Rapid urban development reduces the earth's natural ability to absorb water, as impermeable surfaces like concrete prevent water from seeping into the ground. As a result, even moderate rainfall can result in significant flooding in cities.
+                    </p>
+                    <img src="urbanization.jpg" alt="Urban Flood" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4 image-effect">
+                    <a href="https://en.wikipedia.org/wiki/Urban_flooding" target="_blank" class="text-blue-500 underline">Learn More</a>
+                </div>
+                <div class="bg-white text-gray-900 p-6 rounded-lg hover-effect">
+                    <h3 class="text-2xl font-bold mb-4">Storm Surges and Hurricanes</h3>
+                    <p>
+                        Strong winds and storm surges during hurricanes and cyclones push large volumes of water inland, leading to coastal flooding. Low-lying coastal areas are especially vulnerable to these types of floods.
+                    </p>
+                    <img src="strom.jpg" alt="Hurricane" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4 image-effect">
+                    <a href="https://en.wikipedia.org/wiki/Storm_surge" target="_blank" class="text-blue-500 underline">Learn More</a>
+                </div>
+                <div class="bg-white text-gray-900 p-6 rounded-lg hover-effect">
+                    <h3 class="text-2xl font-bold mb-4">River Overflow</h3>
+                    <p>
+                        Rivers and lakes can overflow due to excessive rainfall or snowmelt. These floods can be slow-building but devastating, often affecting vast areas of farmland and residential communities.
+                    </p>
+                    <img src="river.jpg" alt="River Overflow" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4 image-effect">
+                    <a href="https://en.wikipedia.org/wiki/River_flood" target="_blank" class="text-blue-500 underline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Effects of Floods Section -->
+    <section id="effects" class="py-16 bg-gray-900 text-center">
+        <div class="max-w-6xl mx-auto px-6 fade-in">
+            <h2 class="text-4xl font-bold mb-8">Effects of Floods</h2>
+            <p class="text-lg mb-8">Floods can have devastating impacts on both the environment and human populations, including:</p>
+            <ul class="list-disc list-inside text-left mx-auto max-w-2xl">
+                <li class="mb-4">Widespread destruction of infrastructure, leading to costly repairs and reconstruction.</li>
+                <li class="mb-4">Significant loss of agricultural productivity, which can affect local and global food supplies.</li>
+                <li class="mb-4">Increased risk of waterborne diseases due to contaminated water sources.</li>
+                <li class="mb-4">Displacement of populations, often resulting in long-term humanitarian crises.</li>
+                <li class="mb-4">Long-lasting environmental impacts, such as loss of biodiversity and habitat destruction.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Precautions Section -->
+    <section id="precautions" class="py-16 bg-gray-800 text-center">
+        <div class="max-w-6xl mx-auto px-6 fade-in">
+            <h2 class="text-4xl font-bold mb-8">Precautions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white text-gray-900 p-6 rounded-lg hover-effect">
+                    <h3 class="text-2xl font-bold mb-4">Monitor Weather Reports</h3>
+                    <p>
+                        Stay informed about weather conditions through official weather channels and mobile alerts. Early warning systems are critical in preparing for flood emergencies.
+                    </p>
+                    <img src="monitor.webp" alt="Weather Reports" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4 image-effect">
+                    <a href="https://en.wikipedia.org/wiki/Weather_forecasting" target="_blank" class="text-blue-500 underline">Learn More</a>
+                </div>
+                <div class="bg-white text-gray-900 p-6 rounded-lg hover-effect">
+                    <h3 class="text-2xl font-bold mb-4">Create an Emergency Plan</h3>
+                    <p>
+                        Have a well-structured emergency plan that includes evacuation routes and emergency contact information. Practice your plan with family members regularly.
+                    </p>
+                    <img src="plan.webp" alt="Emergency Plan" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4 image-effect">
+                    <a href="https://en.wikipedia.org/wiki/Emergency_management" target="_blank" class="text-blue-500 underline">Learn More</a>
+                </div>
+                <div class="bg-white text-gray-900 p-6 rounded-lg hover-effect">
+                    <h3 class="text-2xl font-bold mb-4">Prepare an Emergency Kit</h3>
+                    <p>
+                        Assemble a disaster supply kit that includes food, water, medications, and important documents. Ensure it’s accessible and ready for quick evacuation.
+                    </p>
+                    <img src="kit.webp" alt="Emergency Kit" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4 image-effect">
+                    <a href="https://en.wikipedia.org/wiki/Disaster_supply_kit" target="_blank" class="text-blue-500 underline">Learn More</a>
+                </div>
+                <div class="bg-white text-gray-900 p-6 rounded-lg hover-effect">
+                    <h3 class="text-2xl font-bold mb-4">Know Your Flood Risk</h3>
+                    <p>
+                        Understand the flood risk in your area. Consult local government resources to assess whether you live in a flood-prone region and the potential risks involved.
+                    </p>
+                    <img src="know.jpg" alt="Flood Risk Assessment" class="w-full h-40 object-cover rounded-lg shadow-lg mb-4 image-effect">
+                    <a href="https://en.wikipedia.org/wiki/Floodplain" target="_blank" class="text-blue-500 underline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flood History Table Section -->
+    <section id="history" class="py-16 bg-gray-900 text-center">
+        <div class="max-w-6xl mx-auto px-6 fade-in">
+            <h2 class="text-4xl font-bold mb-8">Major Flood Events in World History</h2>
+            <table class="min-w-full bg-white text-gray-900 border border-gray-300">
+                <thead>
+                    <tr>
+                        <th class="py-3 px-4 border-b border-gray-300">Year</th>
+                        <th class="py-3 px-4 border-b border-gray-300">Location</th>
+                        <th class="py-3 px-4 border-b border-gray-300">Details</th>
+                        <th class="py-3 px-4 border-b border-gray-300">Deaths</th>
+                        <th class="py-3 px-4 border-b border-gray-300">Damage (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-3 px-4 border-b border-gray-300">1931</td>
+                        <td class="py-3 px-4 border-b border-gray-300">China</td>
+                        <td class="py-3 px-4 border-b border-gray-300">Yangtze River Flood</td>
+                        <td class="py-3 px-4 border-b border-gray-300">1,000,000+</td>
+                        <td class="py-3 px-4 border-b border-gray-300">$20 billion</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 border-b border-gray-300">2004</td>
+                        <td class="py-3 px-4 border-b border-gray-300">India & Bangladesh</td>
+                        <td class="py-3 px-4 border-b border-gray-300">Monsoon Floods</td>
+                        <td class="py-3 px-4 border-b border-gray-300">1,500</td>
+                        <td class="py-3 px-4 border-b border-gray-300">$15 billion</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 border-b border-gray-300">2010</td>
+                        <td class="py-3 px-4 border-b border-gray-300">Pakistan</td>
+                        <td class="py-3 px-4 border-b border-gray-300">Indus River Floods</td>
+                        <td class="py-3 px-4 border-b border-gray-300">2,000</td>
+                        <td class="py-3 px-4 border-b border-gray-300">$10 billion</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 border-b border-gray-300">2015</td>
+                        <td class="py-3 px-4 border-b border-gray-300">Myanmar</td>
+                        <td class="py-3 px-4 border-b border-gray-300">Monsoon Floods</td>
+                        <td class="py-3 px-4 border-b border-gray-300">100</td>
+                        <td class="py-3 px-4 border-b border-gray-300">$1 billion</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 border-b border-gray-300">2020</td>
+                        <td class="py-3 px-4 border-b border-gray-300">China</td>
+                        <td class="py-3 px-4 border-b border-gray-300">Yangtze River Floods</td>
+                        <td class="py-3 px-4 border-b border-gray-300">150</td>
+                        <td class="py-3 px-4 border-b border-gray-300">$5 billion</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+   
+    <!-- Footer Section -->
+    <footer class="bg-gray-700 text-gray-100 py-8">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-4">Contact Us</h3>
+            <p>If you have any questions or need more information, feel free to reach out:</p>
+            <div class="flex justify-center mt-4 space-x-8">
+                <div>
+                    <h4 class="text-xl font-semibold">Anirudh Singh</h4>
+                    <p>Email: anirudh@example.com</p>
+                    <p>Phone: +123-456-7890</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold">Asad Khan</h4>
+                    <p>Email: asad@example.com</p>
+                    <p>Phone: +123-456-7891</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold">Aarav Singh</h4>
+                    <p>Email: aarav@example.com</p>
+                    <p>Phone: +123-456-7892</p>
+                </div>
+            </div>
+            <p class="mt-8">&copy; 2024 Flood Awareness Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition">
+        &#8593; Top
+    </a>
+
+</body>
+</html>
